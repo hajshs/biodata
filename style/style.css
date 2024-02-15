@@ -1,0 +1,53 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+#first {
+    display: flex;
+    height: 100vh;
+    width: 100vw;
+    align-items: center;
+    justify-content: center;
+    background-color: lightgray;
+}
+
+#main {
+    display: grid;
+    height: 1000px;
+    width: 800px;
+    background-color: red;
+    grid-template-rows: repeat(20, 50px);
+    grid-template-columns: repeat(20, 40px);
+}
+
+#dp {
+    grid-area: 3 / 14 / 9 / 21;
+    background-color: white;
+}
+
+#title {
+    grid-area: 1 / 1 / 3 / 21;
+    background-color: green;
+}
+
+#pd {
+    grid-area: 3 / 1 / 4 / 14;
+    background-color: blueviolet;
+}
+
+#name {
+    grid-area: 4 / 1 / 5 / 14; 
+    background-color: blue;
+}
+
+#age {
+    grid-area: 5 / 1 / 6 / 14;
+    background-color: yellow;
+}
+
+#address {
+    grid-area: 6 / 1 / 7 / 14;
+    background-color: black;
+}
