@@ -5,21 +5,28 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>BioData</title>
     <link href="style/style.css" rel="stylesheet">
+	<script src="script/script.js"></script>
 </head>
 <body>
     <div id="first">
         <div id="main">
-            <div id="title"></div>
-            <div id="dp"></div>
+            <div id="title">BIO DATA</div>
+            <div id="dp"><img src="images/pfp.png" id="pic"></div>
             <div id="pd"></div>
-            <div id="name"></div>
-            <div id="age"></div>
-            <div id="address"></div>
-            <div id="bday"></div>
-            <div id="num"></div>
-            <div id="gender"></div>
-            <div id="educ"></div>
-        </div>
+            <div id="name" onclick="nameDisp()"><b>Name:</b> <p id="myname">Joshua Daniel O. Narag</p></div>
+            <div id="age" onclick="ageDisp()"><b>Age:</b> <p id="myage">19</p></div>
+            <div id="address" onclick="addDisp()"><b>Address:</b> <p id="myadd">31 1st Street LPV, Pamplona 3, Las Pinas City</p></div>
+            <div id="bday" onclick="bdayDisp()"><b>Date of Birth:</b> <p id="mybday">Apr 20, 2004</p></div>
+            <div id="num" onclick="numDisp()"><b>Contact Number:</b> <p id="mynum">0927 858 1518</p></div>
+            <div id="gender" onclick="genderDisp()"><b>Gender:</b> <p id="mygender">Male</p></div>
+			<div id="eadd" onclick="eaddDisp()"><b>Email Address:</b> <p id="myeadd">jdnarag26@gmail.com</p></div>
+            <div id="educ">EDUCATION</div>
+			<div id="gs" onclick="gsDisp()"><b>2011 - 2017:</b> <p id="mygs">St. Joseph's Academy</p></div>
+			<div id="hs" onclick="hsDisp()"><b>2017 - 2021:</b> <p id="myhs">St. Joseph's Academy</p></div>
+			<div id="shs" onclick="shsDisp()"><b>2021 - 2023:</b>  <p id="myshs">Adamson University</p></div>
+			<div id="coll" onclick="collDisp()"><b>2023 - Present:</b>  <p id="mycoll">Adamson University</p></div>
+			<div id="reveal" onclick="revAll()">REVEAL</div>
+			</div>
     </div>
 </body>
 </html>

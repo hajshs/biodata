@@ -1,7 +1,13 @@
+@import url('https://fonts.googleapis.com/css2?family=Heebo&display=swap');
+
 * {
-    margin: 0;
-    padding: 0;
     box-sizing: border-box;
+	font-family: 'Heebo', sans-serif;
+}
+
+body {
+	margin: 0;
+	padding: 0;
 }
 
 #first {
@@ -17,37 +23,127 @@
     display: grid;
     height: 1000px;
     width: 800px;
-    background-color: red;
+    background-color: white;
     grid-template-rows: repeat(20, 50px);
     grid-template-columns: repeat(20, 40px);
+	border: 1px solid;
 }
 
 #dp {
     grid-area: 3 / 14 / 9 / 21;
-    background-color: white;
+	height: 300px;
+	width: auto;
+}
+
+#pic {
+	height: 100%;
+}
+
+#title, #educ {
+	font-weight: bold;
 }
 
 #title {
     grid-area: 1 / 1 / 3 / 21;
-    background-color: green;
+    display: flex;
+	align-items: center;
+	justify-content: center;
+	font-size: 48px;
 }
 
 #pd {
     grid-area: 3 / 1 / 4 / 14;
-    background-color: blueviolet;
+}
+
+p {
+	display: none;
+}
+
+#name, #age, #gender, #bday, #num, #address, #nation, #eadd{
+	margin-left: 20px;
+	font-size: 24px;
+	cursor: pointer;
 }
 
 #name {
-    grid-area: 4 / 1 / 5 / 14; 
-    background-color: blue;
+    grid-area: 4 / 1 / 5 / 14;
+	margin-left: 20px;
+	font-size: 24px;
 }
 
 #age {
     grid-area: 5 / 1 / 6 / 14;
-    background-color: yellow;
+}
+
+#gender {
+    grid-area: 6 / 1 / 7 / 14;
+}
+
+#bday {
+	grid-area: 7 / 1 / 8 / 14;
+}
+
+#num {
+	grid-area: 8 / 1 / 9 / 14;
 }
 
 #address {
-    grid-area: 6 / 1 / 7 / 14;
-    background-color: black;
+	grid-area: 9 / 1 / 10 / 21;
+	margin-top: 25px;
+}
+
+#eadd {
+	grid-area: 10 / 1 / 11 / 21;
+	margin-top: 25px;
+}
+
+#educ {
+	grid-area: 11 / 1 / 13 / 21;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	font-size: 36px;
+	margin-top: 20px;
+}
+
+#gs, #hs, #shs, #coll {
+	display: flex;
+	align-items: center;
+	font-size: 30px;
+	padding-left: 20px;
+	cursor: pointer;
+}
+
+#gs {
+	grid-area: 13 / 1 / 14 / 21;
+}
+
+#hs {
+	grid-area: 14 / 1 / 15 / 21;
+}
+
+#shs {
+	grid-area: 15 / 1 / 16 / 21;
+}
+
+#coll {
+	grid-area: 16 / 1 / 17 / 21;
+}
+
+#reveal {
+	grid-area: 19 / 9 / 20 / 13;
+	display: flex;
+	font-size: 20px;
+	justify-content: center;
+	align-items: center;
+	border: 1px solid;
+	cursor: pointer;
+}
+
+#mygs, #myhs, #myshs, #mycoll {
+	margin-left: 20px;
+}
+
+#reveal:hover {
+	background-color: gray;
 }
